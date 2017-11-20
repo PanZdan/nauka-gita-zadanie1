@@ -1,2 +1,2 @@
 'autoprefixer-cli -o style.prefixed.css style.css'
-'nu-html-checker /d/Kodilla/learning-git/nauka-gita-zadanie1/*.html'
+'nu-html-checker *.html'
