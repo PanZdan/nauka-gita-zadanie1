@@ -5,16 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:html",
-    "test:html": "nu-html-checker *.html",
-
+    "test:html": "glob-run nu-html-checker *.html",
+    
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
-    "build:sass": "sass --sourcemap=none --update scss:css",
+    "build:sass": "sass --sourcemap=none --update scss/style.scss:css/style.css",
     "build:autoprefixer": "autoprefixer-cli css/style.css"
-},
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.18.13"
+    "browser-sync": "^2.18.13",
+    "glob-run": "^0.1.6",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "nu-html-checker": "^0.1.0",
+    "parallelshell": "^3.0.2"
   }
 }
