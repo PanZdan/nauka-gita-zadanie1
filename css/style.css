@@ -1,12 +1,8 @@
 body {
   margin: 0 auto;
   background-color: #031721;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  justify-content: center; }
 
 .lyrics {
   text-align: center;
@@ -14,4 +10,5 @@ body {
   .lyrics h2 {
     font-weight: bold;
     color: #E80B0B; }
+
 /*# sourceMappingURL=style.css.map */
